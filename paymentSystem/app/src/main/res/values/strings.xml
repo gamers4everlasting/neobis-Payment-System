@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">paymentSystem</string>
+    <string name="payment_to_neo_bis">Оплата за курсы Необис</string>
+    <string name="user_info">Данные покупателя</string>
+    <string name="image">image</string>
+    <string name="fio">ФИО</string>
+    <string name="email">Email</string>
+    <string name="_996">+996</string>
+    <string name="payment">Способы оплаты</string>
+</resources>

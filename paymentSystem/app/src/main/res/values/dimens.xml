@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sz_8">8dp</dimen>
+    <dimen name="sz_17">17dp</dimen>
+    <dimen name="sz_18">18sp</dimen>
+    <dimen name="sz_20">20dp</dimen>
+    <dimen name="sz_15">15dp</dimen>
+</resources>

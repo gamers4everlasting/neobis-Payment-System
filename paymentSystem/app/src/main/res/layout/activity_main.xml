@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:popupTheme="@style/AppTheme">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_launcher_background" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_shadow" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#32B381"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/payment_to_neo_bis"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="@string/user_info"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sz_18" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/initials"
+                style="@style/MainPageTextView"
+                android:layout_marginTop="@dimen/sz_17"
+                android:hint="@string/fio"
+                android:inputType="textCapWords|textPersonName"
+                app:backgroundTint="@android:color/white" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/email"
+                style="@style/MainPageTextView"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:backgroundTint="@android:color/white" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/phone"
+                style="@style/MainPageTextView"
+                android:hint="@string/_996"
+                android:inputType="phone"
+                app:backgroundTint="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/payment"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sz_18" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sz_15"
+                android:layout_marginTop="@dimen/sz_20"
+                android:focusable="false"
+                tools:listitem="@layout/cell_main" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
