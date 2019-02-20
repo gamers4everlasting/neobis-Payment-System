@@ -12,6 +12,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="sldkfjnvldkfjv"
+        android:id="@+id/toolbar"
         app:titleTextColor="@color/colorPrimary"></android.support.v7.widget.Toolbar>
 
 </android.support.constraint.ConstraintLayout>

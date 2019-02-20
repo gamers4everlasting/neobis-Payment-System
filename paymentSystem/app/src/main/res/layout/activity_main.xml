@@ -35,7 +35,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:orientation="vertical"
-            tools:context=".MainActivity">
+            tools:context=".ui.MainActivity">
 
             <TextView
                 android:id="@+id/header_text"
@@ -59,10 +59,17 @@
                 android:textSize="@dimen/sz_18" />
 
             <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/initials"
+                android:id="@+id/second_name"
                 style="@style/MainPageTextView"
                 android:layout_marginTop="@dimen/sz_17"
-                android:hint="@string/fio"
+                android:hint="@string/surname"
+                android:inputType="textCapWords|textPersonName"
+                app:backgroundTint="@android:color/white" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/first_name"
+                style="@style/MainPageTextView"
+                android:hint="@string/name"
                 android:inputType="textCapWords|textPersonName"
                 app:backgroundTint="@android:color/white" />
 
@@ -77,6 +84,7 @@
                 android:id="@+id/phone"
                 style="@style/MainPageTextView"
                 android:hint="@string/_996"
+                android:maxLength="13"
                 android:inputType="phone"
                 app:backgroundTint="@android:color/white" />
 

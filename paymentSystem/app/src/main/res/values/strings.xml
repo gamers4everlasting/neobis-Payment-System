@@ -7,4 +7,6 @@
     <string name="email">Email</string>
     <string name="_996">+996</string>
     <string name="payment">Способы оплаты</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
 </resources>
